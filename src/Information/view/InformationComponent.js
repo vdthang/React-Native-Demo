@@ -1,6 +1,6 @@
 import { View,Text,StyleSheet,TouchableOpacity,Image } from 'react-native';
 import React, { Component } from 'react'
-import MapView from 'react-native-maps';
+
 export default class InformationComponent extends Component {
    
     render() {
@@ -9,16 +9,7 @@ export default class InformationComponent extends Component {
     
         return (
           <View style ={styles.container}>
-            <MapView
-              style={styles.map}
-              region={{
-                latitude: 37.78825,
-                longitude: -122.4324,
-                latitudeDelta: 0.015,
-                longitudeDelta: 0.0121,
-              }}
-            >
-            </MapView>
+            <Text>InformationComponent </Text>
           </View>
         );
       }
